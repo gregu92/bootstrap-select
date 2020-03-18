@@ -819,6 +819,8 @@
   Selectpicker.DEFAULTS = {
     noneSelectedText: 'Nothing selected',
     noneResultsText: 'No results matched {0}',
+    noneResultsAddText: '<b>Add</b>',
+    noneResultsAddUrl: './add',
     countSelectedText: function (numSelected, numTotal) {
       return (numSelected == 1) ? '{0} item selected' : '{0} items selected';
     },
@@ -2543,6 +2545,7 @@
           if (!searchMatch.length) {
             noResults.className = 'no-results';
             noResults.innerHTML = that.options.noneResultsText.replace('{0}', '"' + htmlEscape(searchValue) + '"');
+            noResults.innerHTML += '<a href="' + that.options.noneResultsAddUrl + '">' + that.options.noneResultsAddText + '</a>';
             that.$menuInner[0].firstChild.appendChild(noResults);
           }
         } else {

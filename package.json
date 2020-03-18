@@ -3,7 +3,7 @@
   "title": "bootstrap-select-ajax",
   "main": "dist/js/bootstrap-select.js",
   "description": "The jQuery plugin extending original jQuery plugin from https://snapappointments.com/bootstrap-select",
-  "version": "0.1",
+  "version": "1.0.1",
   "homepage": "https://github.com/gregu92/bootstrap-select",
   "author": {
     "name": "Grzegorz Miącz",
